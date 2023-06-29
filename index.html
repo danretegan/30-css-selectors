@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>30 CSS Selectors</title>
+</head>
+<body>
+
+
+    <!-- Live Demo of Basic Selectors -->
+ <h1>Live Demo of Basic Selectors</h1>   
+ <h2>* Selector</h2>
+    <div class="universal-selector">
+       <p> My paragraph here. </p>
+       <ul>
+          <li> List Item 1</li>
+          <li> List Item 2</li>
+       </ul>
+    
+       <ul>
+          <li> List Item 3</li>
+          <li> List Item 4</li>
+       </ul>   
+    </div>
+    
+    <h2>#X Selector</h2>
+    <div id="id-selector">
+       <p> My paragraph here. </p>
+       <ul>
+          <li> List Item 1</li>
+          <li> List Item 2</li>
+       </ul>
+    
+       <ul>
+          <li> List Item 3</li>
+          <li> List Item 4</li>
+       </ul>   
+    </div>
+    
+    <h2>.X Selector</h2>
+    <div id="x-container">
+       <p> My paragraph here. </p>
+       <ul>
+          <li> List Item 1</li>
+          <li> List Item 2</li>
+       </ul>
+    
+       <ul>
+          <li class="warning">Something went Wrong </li>
+          <li> List Item 4</li>
+       </ul>   
+    </div>
+    
+    <h2>X Selector</h2>
+    <div class="xtype-selector">
+    <div id="xtype-container">
+       <p> My paragraph here. </p>
+       <ul>
+          <li> List Item 1</li>
+          <li> List Item 2</li>
+       </ul>
+    
+       <ul>
+          <li class="warning">Something went Wrong </li>
+          <li> List Item 4</li>
+       </ul>   
+    </div>
+    
+    <p> Paragraph outside of div </p>
+    </div>
+
+<!-- Live Demo of Combinator Selectors -->
+ <h1>Live Demo of Combinator Selectors</h1>
+ <h2>X Y Selector</h3>
+    <div class="xy-selector">
+    <div id="xy-container">
+       <p> My paragraph here. </p>
+       <ul>
+          <li> List Item 1</li>
+          <li> List Item 2</li>
+       </ul>
+    
+       <ul>
+          <li class="warning">Something went Wrong </li>
+          <li> List Item 4</li>
+       </ul>   
+    </div>
+    
+    <p> Paragraph outside of div </p>
+    </div>
+    
+    <h2>X + Y Selector</h2>
+    <div id="adj-container">
+      <ul>
+        <li> List Item </li>
+        <li> List Item </li>
+        <li> List Item </li>
+        <li> List Item </li>
+      </ul>
+    
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+    </div>
+    
+    <h2>X > Y Selector</h2>
+    
+    <div id="direct-container">
+      <ul>
+        <li> List Item
+          <ul>
+            <li> Child </li>
+          </ul>
+        </li>
+        <li> List Item </li>
+        <li> List Item </li>
+        <li> List Item </li>
+      </ul>
+    
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+    </div>
+    
+    <h2>X ~ Y Selector</h2>
+    <div id="sib-container">
+      <ul>
+        <li> List Item
+          <ul>
+            <li> Child </li>
+          </ul>
+        </li>
+        <li> List Item </li>
+        <li> List Item </li>
+        <li> List Item </li>
+      </ul>
+    
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+    </div>
+
+    <!-- Live Demo of Attribute Selectors -->
+ <h1>Live Demo of Attribute Selectors</h1>
+<h2>X[title] Selector</h2>
+<div id="aatr-container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+   </div>
+
+<h2>X[href="foo"] Selector</h2>
+
+<div id="batr-container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+   </div>
+
+<h2>X[href*="tuts"] Selector</h2>
+<div id="catr-container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum <a href="https://webdesign.tutsplus.com">Tuts+ Web Design+</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+   </div>
+
+<h2>a[href^="http"] Selector</h2>
+<div id="datr-container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+   </div>
+
+<h2>X[href$=".jpg"] Selector</h2>
+<div id="eatr-container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> sit amet, consectetur "<a href="http://d2o0t5hpnwv4c1.cloudfront.net/839_git/preview.jpg">Getting Good with Git</a>" elit, sed do eiusmod tempor. </p>
+   </div>
+
+<h2>X[foo~="bar"] Selector</h2>
+   <div id="fatr-container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="#" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+      <p> <a href="http://d2o0t5hpnwv4c1.cloudfront.net/817_rubyNewbies1/preivew.png" data-filetype="image">PNG Image</a> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> sit amet, consectetur "<a href="http://d2o0t5hpnwv4c1.cloudfront.net/839_git/preview.jpg" data-filetype="image">Getting Good with Git</a>" elit, sed do eiusmod tempor. </p>
+   </div>
+
+<!-- Live Demo of Pseudo Selectors -->
+ <h1>Live Demo of Pseudo Selectors</h1>
+<h2>X:visited and X:link</h2>
+<div id="xvl-container">
+  <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod <a href="https://webdesign.tutsplus.com">tempor</a> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<h2>X:checked</h2>
+
+<div id="xchk-container">
+  <form>
+      <input type="radio" checked name="rad" value="Radio Button">
+      <label for="rad"> Radio Button</label>
+      <input type="radio" name="rad" value="Radio Button 2">
+      <label for="rad"> Radio Button 2</label>
+      <input type="radio" name="rad" value="Radio Button 3">
+      <label for="rad"> Radio Button 3</label>
+   </form>
+</div>
+
+<h2>X:not(selector)</h2>
+<div id="xnot-container">
+  <div id="container">
+      <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <ul>
+         <li>
+            <a href="#"> Anchor Tag </a>
+         </li>
+         <li>
+            <a href="#"> Anchor Tag </a>
+         </li>
+         <li>
+            <a href="#"> Anchor Tag </a>
+         </li>
+         <li>
+            <a href="#"> Anchor Tag </a>
+         </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+      <p> <a href="http://d2o0t5hpnwv4c1.cloudfront.net/817_rubyNewbies1/preivew.png" data-filetype="image">PNG Image</a> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> sit amet, consectetur "<a href="http://d2o0t5hpnwv4c1.cloudfront.net/839_git/preview.jpg" data-info="external image">Getting Good with Git</a>" elit, sed do eiusmod tempor. </p>
+   </div>
+
+   <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </div>
+</div>
+
+<h2>X::pseudoElement</h2>
+<div id="xpsel-container">
+  <ul>
+         <li> List Item
+         <ul>
+            <li> Child </li>
+         </ul>
+         </li>
+         <li> List Item </li>
+         <li> List Item </li>
+         <li> List Item </li>
+      </ul>
+
+      <ul>
+         <li>
+            <a href="#"> Anchor Tag </a>
+         </li>
+         <li>
+            <a href="#"> Anchor Tag </a>
+         </li>
+         <li>
+            <a href="#"> Anchor Tag </a>
+         </li>
+         <li>
+            <a href="#"> Anchor Tag </a>
+         </li>
+      </ul>
+
+      <p> Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor.  Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor.  Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+      <p> <a href="http://d2o0t5hpnwv4c1.cloudfront.net/817_rubyNewbies1/preivew.png" data-filetype="image">PNG Image</a> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+      <p> Lorem ipsum <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> sit amet, consectetur "<a href="http://d2o0t5hpnwv4c1.cloudfront.net/839_git/preview.jpg" data-info="external image">Getting Good with Git</a>" elit, sed do eiusmod tempor. </p>
+   </div>
+
+   <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </div>
+</div>
+
+<!-- Live Demo of Nth Child and Type Selectors
+ -->
+ <h1>Live Demo of Nth Child and Type Selectors
+</h1>
+<h2>X:nth-child(n)</h2>
+<div id="xnch-container">
+  <ul>
+    <li> List Item
+      <ul>
+        <li> Child </li>
+        <li> Child </li>
+        <li> Child </li>
+      </ul>
+    </li>
+    <li> List Item </li>
+    <li> List Item </li>
+    <li> List Item </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+  </ul>
+
+  <p> Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+  <p> <a href="http://d2o0t5hpnwv4c1.cloudfront.net/817_rubyNewbies1/preivew.png" data-filetype="image">PNG Image</a> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+  <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+  <p> Lorem ipsum <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> sit amet, consectetur "<a href="http://d2o0t5hpnwv4c1.cloudfront.net/839_git/preview.jpg" data-info="external image">Getting Good with Git</a>" elit, sed do eiusmod tempor. </p>
+</div>
+
+<h2>X:nth-last-child(n)</h2>
+
+<div id="xnlch-container">
+  <ul>
+    <li> List Item
+      <ul>
+        <li> Child </li>
+        <li> Child </li>
+        <li> Child </li>
+      </ul>
+    </li>
+    <li> List Item </li>
+    <li> List Item </li>
+    <li> List Item </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+  </ul>
+
+  <p> Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. Lorem ipsum dolor sit amet, <a href="http://www.google.com" data-info="external" title="Some title">consectetur</a> adipisicing elit, sed do <a href="https://webdesign.tutsplus.com">Tuts+ Web Design</a> tempor. </p>
+  <p> <a href="http://d2o0t5hpnwv4c1.cloudfront.net/817_rubyNewbies1/preivew.png" data-filetype="image">PNG Image</a> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+  <p> Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing</a> elit, sed do eiusmod tempor. </p>
+  <p> Lorem ipsum <a href="http://net.tutsplus.com">Nettuts+</a> sit amet, consectetur "<a href="http://d2o0t5hpnwv4c1.cloudfront.net/839_git/preview.jpg" data-info="external image">Getting Good with Git</a>" elit, sed do eiusmod tempor. </p>
+</div>
+
+<h2>X:nth-of-type(n)</h2>
+<div id="xntp-container">
+  <ul>
+    <li> List Item
+      <ul>
+        <li> Child </li>
+        <li> Child </li>
+        <li> Child </li>
+      </ul>
+    </li>
+    <li> List Item </li>
+    <li> List Item </li>
+    <li> List Item </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+  </ul>
+
+  <ul>
+    <li> List Items </li>
+    <li> List Items </li>
+    <li> List Items </li>
+  </ul>
+</div>
+
+<h2>X:nth-last-of-type(n)</h2>
+<div id="xnltp-container">
+  <ul>
+    <li> List Item
+      <ul>
+        <li> Child </li>
+        <li> Child </li>
+        <li> Child </li>
+      </ul>
+    </li>
+    <li> List Item </li>
+    <li> List Item </li>
+    <li> List Item </li>
+  </ul>
+
+  <ul>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+    <li>
+      <a href="#"> Anchor Tag </a>
+    </li>
+  </ul>
+
+  <ul>
+    <li> List Items </li>
+    <li> List Items </li>
+    <li> List Items </li>
+  </ul>
+</div>
+
+<h2>X:first-child and X:last-child</h2>
+<div id="xflch-container">
+  <ul>
+    <li> List Item </li>
+    <li> List Item </li>
+    <li> List Item </li>
+  </ul>
+</div>
+
+<h2>X:only-child</h2>
+<div id="xoch-container">
+  <div>
+    <p> My paragraph here. </p>
+  </div>
+
+  <div>
+    <p> Two paragraphs total. </p>
+    <p> Two paragraphs total. </p>
+  </div>
+</div>
+
+<h2>X:only-of-type</h2>
+<div id="xot-container">
+  <div>
+    <p> My paragraph here. </p>
+    <ul>
+      <li> List Item </li>
+      <li> List Item </li>
+    </ul>
+  </div>
+
+  <div>
+    <p> Two paragraphs total. </p>
+    <p> Two paragraphs total. </p>
+    <ul>
+      <li> List Item </li>
+    </ul>
+  </div>
+
+</div>
+
+<h2>X:first-of-type</h2>
+<div id="xfot-container">
+  <div>
+   <p> My paragraph here. </p>
+   <ul>
+      <li> List Item 1</li>
+      <li> List Item 2</li>
+   </ul>
+
+   <ul>
+      <li> List Item 3</li>
+      <li> List Item 4</li>
+   </ul>   
+</div>
+
+</div>
+
+
+</body>
+</html>
